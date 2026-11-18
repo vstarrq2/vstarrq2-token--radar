@@ -1,14 +1,20 @@
 <!doctype html>
+<!-- Token Radar: a radar console for pre-token protocols. The page is a shell:
+     app.js builds the whole board from the data beside it (data.js), so the
+     file you are reading stays small on purpose. No network: no font, image
+     or script comes from anywhere but this directory. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Token Radar ranks pre-token protocols by implied value and shows how to farm each one.">
 <title>Token Radar: pre-token protocols ranked by implied value</title>
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <a class="skip" href="#board">Skip to the board</a>
 <main id="board" tabindex="-1" aria-busy="true"></main>
+<noscript><p class="noscript">Token Radar needs JavaScript: the board is rendered from the snapshot data beside this page.</p></noscript>
 <script src="../data.js"></script>
 <script src="app.js"></script>
 </body>
